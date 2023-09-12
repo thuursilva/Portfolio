@@ -1,43 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
     <title>Arthur Fernando</title>
 </head>
-<body class="d-flex flex-column gap-3 gap-xl-5 min-vh-100">
-        
+
+<body class="d-flex flex-column gap-3 min-vh-100">
+
     <!--Cabeçalho-->
-        <header>
-            <nav class="navbar navbar-expand-lg bg-black navbar-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html"><p class="mb-1">Home</p></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-black navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <p class="mb-1">Home</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Skills</a>
-                    <a class="nav-link" href="projetos.html">Projetos</a>
-                    <a class="nav-link" href="#">Sobre</a>
+                        <a class="nav-link active" aria-current="page" href="skills.html">Skills</a>
+                        <a class="nav-link active" href="projetos.html">Projetos</a>
+                        <a class="nav-link active" href="about.html">Sobre</a>
                     </div>
                 </div>
-                </div>
-            </nav>
-        </header>
-    
-    
-        <!--Rodapé-->
-        <footer class="mt-auto">
-          <div class="text-light text-center bg-black"> 
-            <p class="py-3 mb-0">2023 <i class="bi bi-c-circle"></i> Desenvolvido por Arthur Fernando</p>
+            </div>
+        </nav>
+    </header>
+
+    <!--Carrossel-->
+    <h2 class="fs-1 text-light text-center">Principais projetos</h2>
+
+    <div id="carouselExampleIndicators" class="carousel slide carousel-dark carousel-fade mx-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="https://lista-diaria-thuursilva.vercel.app/"><img src="assets/lista diaria.png"
+                        class="d-block w-100 img-fluid" alt="Projeto lista diária"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://projeto-mochila-de-viagem-correto-thuursilva.vercel.app/"><img
+                        src="assets/mochila de viagem.png" class="d-block w-100 img-fluid"
+                        alt="Projeto mochila de viagem"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://formulario-thuursilva.vercel.app/"><img src="assets/Formulario.png"
+                        class="d-block w-100 img-flui" alt="Projeto formulário"></a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Cards-->
+
+    <!--Lista diária-->
+    <div class="card border border-3 border-dark-subtle d-flex flex-lg-row bg-black m-3">
+        <img src="assets/lista driaria mobile.png" class="card-img-top d-lg-none" alt="Projeto lista diária">
+        <img src="assets/lista diaria.png" class="card-img-top d-none w-50 d-lg-block" alt="Projeto lista diária">
+        <div class="card-body">
+          <h5 class="card-title fs-1 text-light">Projeto Lista Diária</h5>
+          <p class="card-text text-light">Nesse projeto, podemos criar uma lista diária de tarefas. Ao realizar cada tarefa, é possível riscar a mesma, semelhante ao riscar uma informação com a caneta em um caderno. Muito útil para organizar suas tarefas do cotidiano.</p>
+          <div class="d-flex gap-3">
+          <a href="https://lista-diaria-thuursilva.vercel.app/" class="btn btn-primary w-50 d-lg-none">Testar</a>
+          <a href="https://lista-diaria-thuursilva.vercel.app/" class="btn btn-primary w-25 d-none d-lg-block">Testar</a>
+          <a href="#" class="btn btn-primary w-50 d-lg-none">Saiba mais</a>
+          <a href="#" class="btn btn-primary w-25 d-none d-lg-block">Saiba mais</a>
           </div>
-        </footer>
-    
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        </div>
+      </div>
+
+      <!--Mochila de viagem-->
+      <div class="card border border-3 border-dark-subtle d-flex flex-lg-row bg-black m-3">
+        <img src="assets/mochila de vigem mobile.png" class="card-img-top d-lg-none" alt="Projeto lista diária">
+        <img src="assets/mochila de viagem.png" class="card-img-top d-none w-50 d-lg-block" alt="Projeto lista diária">
+        <div class="card-body">
+          <h5 class="card-title fs-1 text-light">Projeto Lista Diária</h5>
+          <p class="card-text text-light">Nesse projeto, podemos criar uma lista diária de tarefas. Ao realizar cada tarefa, é possível riscar a mesma, semelhante ao riscar uma informação com a caneta em um caderno. Muito útil para organizar suas tarefas do cotidiano.</p>
+          <div class="d-flex gap-3">
+          <a href="https://lista-diaria-thuursilva.vercel.app/" class="btn btn-primary w-50 d-lg-none">Testar</a>
+          <a href="https://lista-diaria-thuursilva.vercel.app/" class="btn btn-primary w-25 d-none d-lg-block">Testar</a>
+          <a href="#" class="btn btn-primary w-50 d-lg-none">Saiba mais</a>
+          <a href="#" class="btn btn-primary w-25 d-none d-lg-block">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Formulário-->
+      <div class="card border border-3 border-dark-subtle d-flex flex-lg-row bg-black m-3">
+        <img src="assets/Fromulario mobile.png" class="card-img-top d-lg-none" alt="Projeto lista diária">
+        <img src="assets/Formulario.png" class="card-img-top d-none w-50 d-lg-block" alt="Projeto lista diária">
+        <div class="card-body">
+          <h5 class="card-title fs-1 text-light">Projeto Lista Diária</h5>
+          <p class="card-text text-light">Nesse projeto, podemos criar uma lista diária de tarefas. Ao realizar cada tarefa, é possível riscar a mesma, semelhante ao riscar uma informação com a caneta em um caderno. Muito útil para organizar suas tarefas do cotidiano.</p>
+          <div class="d-flex gap-3">
+          <a href="https://lista-diaria-thuursilva.vercel.app/" class="btn btn-primary w-50 d-lg-none">Testar</a>
+          <a href="https://lista-diaria-thuursilva.vercel.app/" class="btn btn-primary w-25 d-none d-lg-block">Testar</a>
+          <a href="#" class="btn btn-primary w-50 d-lg-none">Saiba mais</a>
+          <a href="#" class="btn btn-primary w-25 d-none d-lg-block">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+
+
+    <!--Rodapé-->
+    <footer class="mt-auto">
+        <div class="text-light text-center bg-black">
+            <p class="py-3 mb-0">2023 <i class="bi bi-c-circle"></i> Desenvolvido por Arthur Fernando</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
 
 </body>
