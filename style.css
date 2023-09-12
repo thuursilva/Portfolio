@@ -1,4 +1,6 @@
 body{
-    background: rgb(3,15,69);
-    background: linear-gradient(5deg, rgba(3,15,69,1) 0%, rgba(14,21,110,1) 51%, rgba(7,90,173,1) 100%);
+    background-image: url(assets/wall3.jpg);
 }
+
+
+
